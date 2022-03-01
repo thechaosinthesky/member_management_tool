@@ -2,7 +2,7 @@
 
 A dashboard for creating and maintaining teams, projects, members.
 
-##Features:
+## Features:
 
 * Create teams that can belong to parent teams in a nested structure
 
@@ -10,7 +10,7 @@ A dashboard for creating and maintaining teams, projects, members.
 
 * Add multiple projects for members
 
-##Requirements:
+## Requirements:
 
 * MySQL DB
 
