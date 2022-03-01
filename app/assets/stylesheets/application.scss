@@ -1,0 +1,146 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ */
+
+@import "bootstrap_variables";
+@import "bootstrap";
+@import "font-awesome";
+@import "scaffolds";
+@import "members";
+@import "projects";
+@import "teams";
+
+#header{
+  .logo{
+    margin: 0 25px;
+    padding-top: 5px;
+    margin-bottom: -5px;
+
+    h6{
+      color: $gray-600;
+      font-style: italic;
+      margin: 0;
+    }
+    h1{
+      color: $dark;
+      padding-left: 20px;
+      margin: 0;
+      position: relative;
+      top: -5px;
+      font-family: "marker felt", "Bradley Hand",  impact;
+    }
+  }
+}
+
+.page-header{
+  text-decoration: underline;
+  display: inline-block;
+  color: $primary;
+  margin-right: 20px;
+}
+
+.page-container{
+  min-height: 400px;
+  background-color: #FFF;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.page-body{
+  padding: 0 20px;
+}
+
+.side-panel{
+  width: 100%;
+  padding-top: 10px;
+
+  button{
+    text-transform: capitalize !important;
+  }
+}
+
+.spacer{
+  height: 5px;
+}
+
+.loader{
+  display: flex;
+  font-style: italic;
+  color: $gray-600;
+  text-align:center;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: {
+     image: asset_url("loader.gif");
+  }
+  span{
+    display: block;
+    text-align:center;
+    margin: auto;
+    margin-bottom: 10px;
+    align-self: flex-end;
+  }
+}
+
+.loader-sm, .loader-sm span{
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding-left: 20px;
+  background-position: left;
+}
+
+#footer{
+  min-height: 150px;
+  background: linear-gradient($info, #000);
+  font-size: .8em;
+  color: #CCC;
+
+  a{
+    color: $primary;
+  }
+
+  > div{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #footer-bar{
+    flex-basis: 100%;
+
+    > div{
+      padding:10px 15px;
+    }
+  }
+
+  .footer-name{
+    font-family: "marker felt", "Bradley Hand",  impact;
+    color: $yellow;
+  }
+
+  .contact-list{
+    list-style-type: none;
+
+    li{
+      display: inline-block;
+    }
+  }
+}
+
+
+
+#alerts{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
