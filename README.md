@@ -1,24 +1,44 @@
-# README
+# Member Management Tool
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A dashboard for creating and maintaining teams, projects, members.
 
-Things you may want to cover:
+Features:
 
-* Ruby version
+* Create teams that can belong to parent teams in a nested structure
 
-* System dependencies
+* Create team members
 
-* Configuration
+* Add multiple projects for members
 
-* Database creation
+Requirements:
 
-* Database initialization
+* MySQL DB
 
-* How to run the test suite
+* Ruby version: 2.5.3
 
-* Services (job queues, cache servers, search engines, etc.)
+## Getting Started
 
-* Deployment instructions
+Install required gems. Execute:
+```
+bundle install
+```
+Setup the database. Execute:
+```
+rake db:create; rake db:migrate
+```
+Add starter data to the database. Execute:
+```
+rake db:seed
+```
 
-* ...
+## Upcoming features
+
+* Pagination of table lists
+
+* Quick Search feature for table lists
+
+* UI tree hierarchy display of teams structure
+
+* Consolidation of React Components under a React App
+
+* Store and display member history of projects and teams in a membership timeline
