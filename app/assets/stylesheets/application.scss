@@ -99,7 +99,7 @@
 }
 
 #footer{
-  min-height: 150px;
+  min-height: 130px;
   background: linear-gradient($info, #000);
   font-size: .8em;
   color: #CCC;
@@ -115,6 +115,7 @@
 
   #footer-bar{
     flex-basis: 100%;
+    margin-bottom: 15px;
 
     > div{
       padding:10px 15px;
@@ -134,8 +135,6 @@
     }
   }
 }
-
-
 
 #alerts{
   position: fixed;

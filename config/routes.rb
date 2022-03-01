@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'teams#index'
+
   resources :projects do
     resources :members
   end
