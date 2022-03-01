@@ -31,6 +31,18 @@ Add starter data to the database. Execute:
 rake db:seed
 ```
 
+## Load Application with Test Data
+```
+rake sprint:generate_data
+```
+
+## Unit Tests
+
+To run unit tests execute:
+```
+rspec
+```
+
 ## Upcoming features
 
 * Pagination of table lists

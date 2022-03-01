@@ -36,18 +36,23 @@
   }
 }
 
+#main{
+
+}
+
 .page-header{
   text-decoration: underline;
   display: inline-block;
-  color: $primary;
   margin-right: 20px;
+  color: $primary;
+  color: $dark;
 }
 
 .page-container{
   min-height: 400px;
   background-color: #FFF;
   padding: 10px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .page-body{
@@ -99,13 +104,12 @@
 }
 
 #footer{
-  min-height: 130px;
   background: linear-gradient($info, #000);
   font-size: .8em;
-  color: #CCC;
+  color: #CFCFCF;
 
   a{
-    color: $primary;
+    color: #FFF;
   }
 
   > div{
@@ -115,7 +119,7 @@
 
   #footer-bar{
     flex-basis: 100%;
-    margin-bottom: 15px;
+    padding-bottom: 20px;
 
     > div{
       padding:10px 15px;
@@ -124,7 +128,7 @@
 
   .footer-name{
     font-family: "marker felt", "Bradley Hand",  impact;
-    color: $yellow;
+    color: #FFF;
   }
 
   .contact-list{

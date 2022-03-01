@@ -44,6 +44,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Use RSpec for specs
   gem 'rspec-rails', '>= 3.5.0'
+  # https://github.com/faker-ruby/faker
+  gem 'faker'
 end
 
 group :development do

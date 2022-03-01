@@ -4,6 +4,10 @@ class ProjectsController < ApplicationController
   # GET /projects or /projects.json
   def index
     if params[:member_id].present?
+
+      # Simpulate load time in dev mode
+      sleep 1.3 if Rails.env.development? || Rails.env.demo?
+
       @member = Member.find(params[:member_id])
       @projects = @member.projects
     else
