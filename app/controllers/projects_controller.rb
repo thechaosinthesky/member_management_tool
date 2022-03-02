@@ -6,7 +6,7 @@ class ProjectsController < ApplicationController
     if params[:member_id].present?
 
       # Simpulate load time in dev mode
-      sleep 1.3 if Rails.env.development? || Rails.env.demo?
+      sleep 0.5 if Rails.env.development? || Rails.env.demo?
 
       @member = Member.find(params[:member_id])
       @projects = @member.projects

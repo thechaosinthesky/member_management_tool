@@ -14,7 +14,7 @@ A dashboard for creating and maintaining teams, projects, members.
 
 * MySQL DB
 
-* Ruby version: 2.5.3
+* Ruby version: 2.7.5 (for version 2.5.3, checkout git branch ruby_2_5_3)
 
 ## Getting Started
 
