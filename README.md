@@ -2,6 +2,8 @@
 
 A dashboard for creating and maintaining teams, projects, members.
 
+* View the Live Demo Here: [https://aqueous-spire-17449.herokuapp.com](https://aqueous-spire-17449.herokuapp.com)
+
 ## Features:
 
 * Create teams that can belong to parent teams in a nested structure
