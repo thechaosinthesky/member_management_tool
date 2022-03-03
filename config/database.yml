@@ -28,13 +28,17 @@ test:
   <<: *default
   database: sprint_test
 
-demo:
-  <<: *default
-  database: sprint_demo
-
 staging:
   <<: *default
   database: sprint_staging
+
+demo:
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  url: <%= ENV['DATABASE_URL'] %>
 
 production:
   adapter: postgresql
