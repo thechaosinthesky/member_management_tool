@@ -38,12 +38,12 @@ gem "font-awesome-rails"
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-group :demo do
+group :production do
   # Use postgress as the database for Active Record for demo
   gem 'pg'
 end
 
-group :development, :test, :staging, :production do
+group :development, :test, :staging do
   # Use mysql as the database for Active Record
   gem 'mysql2'
 end

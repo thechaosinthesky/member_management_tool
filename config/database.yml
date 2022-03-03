@@ -17,14 +17,6 @@ default: &default
   port: 3306
   host: 127.0.0.1
 
-demo:
-  adapter: postgresql
-  encoding: unicode
-  # For details on connection pooling, see Rails configuration guide
-  # https://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  url: <%= ENV['DATABASE_URL'] %>
-
 development:
   <<: *default
   database: sprint_dev
@@ -45,5 +37,9 @@ staging:
   database: sprint_staging
 
 production:
-  <<: *default
-  database: sprint_production
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  url: <%= ENV['DATABASE_URL'] %>
